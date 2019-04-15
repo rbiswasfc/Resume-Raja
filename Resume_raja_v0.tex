@@ -1,0 +1,276 @@
+%-------------------------
+% Resume in Latex
+% RajaBiswas
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{wrapfig}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Inline graphics
+\newcommand*{\WineMenuColor}{black}%
+\newcommand*{\StartMenuGit}{\includegraphics[scale=0.018]{Github}}%
+\newcommand*{\GitMenu}[1]{%
+\StartMenuGit %
+\foreach \x in {#1} {%
+    $\boldsymbol{\textcolor{\WineMenuColor}{>}}$ \texttt{\textcolor{\WineMenuColor}{\x}}%
+}}%
+
+
+%% Inline graphics
+\newcommand*{\StartMenuPh}{\includegraphics[scale=0.015]{Phone}}%
+\newcommand*{\PhMenu}[1]{%
+\StartMenuPh %
+\foreach \x in {#1} {%
+    $\boldsymbol{\textcolor{\WineMenuColor}{>}}$ \texttt{\textcolor{\WineMenuColor}{\x}}%
+}}%
+
+
+%% Inline graphics
+\newcommand*{\StartMenuEm}{\includegraphics[scale=0.015]{E_mail}}%
+\newcommand*{\EmMenu}[1]{%
+\StartMenuPh %
+\foreach \x in {#1} {%
+    $\boldsymbol{\textcolor{\WineMenuColor}{>}}$ \texttt{\textcolor{\WineMenuColor}{\x}}%
+}}%
+
+
+
+
+\newcommand*{\StartMenuLin}{\includegraphics[scale=0.004]{LinkedIn}}%
+\newcommand*{\LinMenu}[1]{%
+\StartMenuLin %
+\foreach \x in {#1} {%
+    $\boldsymbol{\textcolor{\WineMenuColor}{>}}$ \texttt{\textcolor{\WineMenuColor}{\x}}%
+}}%
+
+\newcommand*{\StartMenuMail}{\includegraphics[scale=0.016]{mail}}%
+\newcommand*{\MailMenu}[1]{%
+\StartMenuMail %
+\foreach \x in {#1} {%
+    $\boldsymbol{\textcolor{\WineMenuColor}{>}}$ \texttt{\textcolor{\WineMenuColor}{\x}}%
+}}%
+
+%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \text{\small#3} & \text{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%%%%My custom commands%%%%%%%%%
+\newcommand{\resumeRBSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+
+  \textbf{\href{https://www.linkedin.com/in/raja-biswas}{\Large Raja Biswas}} & \StartMenuEm{} \href{mailto:ceerb@nus.edu.sg}{ceerb@nus.edu.sg}\\
+  \LinMenu{} \href{https://www.linkedin.com/in/raja-biswas/}{linkedin.com/in/raja-biswas} & \StartMenuPh{} +65 86874490 \\
+   \GitMenu{} \href{https://rbiswasfc.github.io/}{github.com/raja-biswas} & \StartMenuMail{} 02-87, 13 Clementi Street, Singapore 120118
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Singapore (NUS)}{Singapore}
+      {\textit{PhD in Civil Engineering,  GPA:} 3.92/4}{\textit{Jan. 2014 -- Aug. 2018}}
+    \resumeSubheading
+      {Indian Institute of Technology, Kanpur (IIT Kanpur)}{Kanpur, India}
+      {\textit{B.Tech. in Civil and Environmental Engineering,  GPA:} 9.30/10 (\textit{Rank 3})}{\textit{Jun. 2009 -- May. 2013}}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+	{Research Fellow, NUS}{Singapore}
+	{\textit{Micro to Macro Scale Transition using Machine Learning}} {\textit{Oct. 2018 - Present}}
+      \resumeItemListStart
+		\item  Built a deep neural network to predict homogenized stress-strain relationships of complex systems
+		
+		\vspace{-4pt}
+		
+		\item Generated training set with 2k$+$ observations by resolving microstructural boundary value problems with periodicity constraints to enforce strain tensors spanning the input space
+			
+		\vspace{-4pt}
+		\item Augmented the input dimension with generated features based on underlying physics and mechanics 
+		\vspace{-4pt}
+		
+		\item Trained neural networks in Keras using Adam optimizer,  dropout regularization, and batch normalization
+		
+		\vspace{-4pt}		
+		
+		\item Predicted homogenized stress values with $<$2\% mean absolute error on test set
+		\vspace{-4pt}
+		
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {PhD Scholar, NUS}{Singapore}
+      {\textit{Micromorphic Computational Homogenization of Heterogeneous Structures}}{\textit{Jan 2014 - August 2018}}
+      \resumeItemListStart
+        \item Developed a predictive multiscale model that accurately captures the influence of underlying mechanisms
+        \vspace{-4pt}
+        \item Formulated a bottom-up solution algorithm ensuring consistent transition from micro to macro scale
+        \vspace{-4pt}
+        \item Developed python scripts using Pandas and Numpy for numerical implementation of the multiscale model 
+        \vspace{-4pt}
+        \item Demonstrated predictive capability by resolving 15\% error in standard multiscale homogenization model
+        \vspace{-4pt}
+        \item Achieved a computational speed up of 3 folds than the reference direct numerical simulations
+        \vspace{-4pt}
+      \resumeItemListEnd
+      
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resumeSubheading
+	{Summer Intern, University of Rostock}{Rostock, Germany}
+	{\textit{Efficiency Increase in Geomaterials Texture and Organic Matter Analysis}} {\textit{May. 2012 - Jul. 2012}}
+      \resumeItemListStart
+		\item  Automated textural analysis of granular materials using Sedimat 4-12 Robot
+		
+		\vspace{-4pt}
+		
+		\item Redesigned chemical pretreatment process using an efficient ultrasonic
+disaggregation technique
+			
+		\vspace{-4pt}
+		\item Reduced total analysis time by 4 folds without compromising on accuracy
+		\vspace{-4pt}
+		
+		
+      \resumeItemListEnd
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \resumeSubHeadingListEnd
+%-----------AWARDS-----------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Student Competition Winner}
+      {best student paper presentation in \href{http://jacobsschool.ucsd.edu/emi2017/}{EMI 2017  Conference}, San Diego, CA, Jun. 4-7 }
+    \resumeSubItem{President's Graduate Fellowship}
+      {exceptional promise and accomplishment in research, NUS, Jan 2014 -- Jan 2018}
+    \resumeSubItem{DAAD-WISE Scholarship}
+      {German academic exchange for summer intern in University of Rostock, May --Jul. 2012}
+    \resumeSubItem{Academic Excellence Award}
+      {excellent coursework performance at IIT Kanpur in academic year 2010-11, 2011-12}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    
+	%%%%%%%%%%%%%%%%%%%%%%%    
+    \resumeSubItem{Recommendation System}
+      {\textit{Data Science Project, Python, Web Scraping, JSON, TF-iDF, word2vec, NLTK}}
+      \vspace{-4pt}
+      \resumeItemListStart
+      
+      \item Built a content based based recommender system to suggest personalized tourist attractions 
+       \vspace{-4pt}
+       \item Scraped web using Selenium and Beautiful Soup libraries to create a database with 20k+ points of interest
+       \vspace{-4pt}
+      \item Recommended tourist attractions aligned with user interests using cosine similarity
+      
+      \vspace{-4pt}
+      \resumeItemListEnd
+      
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+% National Data Science Competitions
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \resumeSubItem{Petfinder.my Adoption Prediction}
+      {\textit{Kaggle Data Science Competition, Python, Pandas, XGBoost, API  }}
+      \resumeItemListStart
+      \item Built a XGBoost model to predict adoption speed of pets in Malaysia
+      \vspace{-4pt}
+      \item Integrated image metadata and sentiments generated from Google Vision and Natural Language API for improving predictive capability   
+      \vspace{-4pt}
+      \resumeItemListEnd
+    %%%%%%%%%%%%%%%%%%
+  	\resumeSubHeadingListEnd
+  	%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Programming Languages}{: Python, FORTRAN, C, SQL} \hfill \textbf{Software}{: Matlab, LATEX, Abaqus, Arc-GIS}
+    }
+    \vspace{-5pt}
+    \item \textbf{Courses}{: Deep Learning Specialization (Coursera), Linear Algebra, Probability \& Statistics, Advanced FEM}
+    \vspace{-5pt}
+    \item \textbf{Libraries}{: NumPy, Pandas, SciKit-Learn, SciPy, Matplotlib, Seaborn, Selenium, TensorFlow, Keras, NLTK}
+  \resumeSubHeadingListEnd
+
+
+\end{document}
